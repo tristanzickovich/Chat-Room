@@ -1,0 +1,9 @@
+<div id="chat" class="col-sm-4">
+  <div id="chat-window">
+    <div id="output"></div>
+    <div id="feedback"></div>
+  </div>
+  <input ng-model="vm.username" type="text" placeholder="username">
+  <input ng-model="vm.message" ng-keypress="vm.emitTypingStatus(true)" type="text" placeholder="message">
+  <button ng-click="vm.sendMessage()">send</button> 
+</div>
